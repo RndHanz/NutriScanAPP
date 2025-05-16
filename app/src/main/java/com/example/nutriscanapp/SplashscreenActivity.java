@@ -22,7 +22,7 @@ public class SplashscreenActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 // Pindah ke LoginActivity
-                Intent intent = new Intent(SplashscreenActivity.this, login_activity.class);
+                Intent intent = new Intent(SplashscreenActivity.this, LoginActivity.class);
                 startActivity(intent);
                 finish(); // supaya tidak bisa balik ke splash
             }
