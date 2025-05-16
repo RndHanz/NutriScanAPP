@@ -1,118 +1,123 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <RelativeLayout
+    <!-- Fullscreen Background Image -->
+    <ImageView
+        android:id="@+id/backgroundImage"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@drawable/background"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/background" />
+
+    <!-- Semi-transparent overlay -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#B3000000" /> <!-- transparan hitam agar teks dan input lebih kontras -->
+
+    <!-- Main Content -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
         android:padding="24dp">
 
-        <!-- ganti @drawable/background dengan nama file gambar buah kamu -->
-
-        <!-- Logo NutriScan di pojok kanan atas -->
-        <TextView
-            android:id="@+id/logoNutriscan"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="NutriScan"
-            android:textColor="@android:color/white"
-            android:textStyle="bold"
-            android:textSize="20sp"
-            android:layout_alignParentEnd="true"
-            android:layout_marginTop="16dp" />
-
-        <!-- Text Sign Up -->
-        <TextView
-            android:id="@+id/signUpTitle"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Sign Up"
-            android:textSize="32sp"
-            android:textColor="@android:color/white"
-            android:textStyle="bold"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="80dp" />
-
-        <!-- Form Input -->
-        <LinearLayout
-            android:id="@+id/formContainer"
+        <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:layout_below="@id/signUpTitle"
-            android:layout_marginTop="32dp">
+            android:layout_height="wrap_content">
 
-            <!-- Nama -->
-            <EditText
-                android:layout_width="match_parent"
-                android:layout_height="50dp"
-                android:hint="Nama"
-                android:background="@android:drawable/edit_text"
-                android:padding="12dp"
-                android:textColor="@android:color/black"
-                android:layout_marginBottom="12dp" />
-
-            <!-- Usia -->
-            <EditText
-                android:layout_width="match_parent"
-                android:layout_height="50dp"
-                android:hint="Usia"
-                android:inputType="number"
-                android:background="@android:drawable/edit_text"
-                android:padding="12dp"
-                android:layout_marginBottom="12dp" />
-
-            <!-- Tinggi Badan -->
-            <EditText
-                android:layout_width="match_parent"
-                android:layout_height="50dp"
-                android:hint="Tinggi Badan"
-                android:inputType="numberDecimal"
-                android:background="@android:drawable/edit_text"
-                android:padding="12dp"
-                android:layout_marginBottom="12dp" />
-
-            <!-- Berat Badan -->
-            <EditText
-                android:layout_width="match_parent"
-                android:layout_height="50dp"
-                android:hint="Berat Badan"
-                android:inputType="numberDecimal"
-                android:background="@android:drawable/edit_text"
-                android:padding="12dp"
-                android:layout_marginBottom="12dp" />
-
-            <!-- Alergi (Dropdown/Spinner) -->
-            <Spinner
-                android:id="@+id/spinnerAlergi"
-                android:layout_width="match_parent"
-                android:layout_height="50dp"
-                android:layout_marginBottom="12dp"
-                android:background="@android:drawable/edit_text" />
-
-            <!-- Password -->
-            <EditText
-                android:id="@+id/passwordField"
-                android:layout_width="match_parent"
-                android:layout_height="50dp"
-                android:hint="Password"
-                android:inputType="textPassword"
-                android:background="@android:drawable/edit_text"
-                android:padding="12dp"
-                android:layout_marginBottom="12dp" />
-
-            <!-- Tombol Sign Up -->
-            <Button
-                android:id="@+id/btnSignUp"
-                android:layout_width="match_parent"
-                android:layout_height="50dp"
-                android:text="Sign Up"
-                android:textStyle="bold"
-                android:background="#2E7D32"
+            <!-- Logo NutriScan -->
+            <TextView
+                android:id="@+id/logoNutriscan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="NutriScan"
                 android:textColor="@android:color/white"
-                android:layout_marginTop="12dp" />
-        </LinearLayout>
-    </RelativeLayout>
-</ScrollView>
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="16dp" />
+
+            <!-- Title -->
+            <TextView
+                android:id="@+id/signUpTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sign Up"
+                android:textSize="32sp"
+                android:textColor="@android:color/white"
+                android:textStyle="bold"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="80dp" />
+
+            <!-- Form -->
+            <LinearLayout
+                android:id="@+id/formContainer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_below="@id/signUpTitle"
+                android:layout_marginTop="32dp">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:hint="Nama"
+                    android:background="@android:drawable/edit_text"
+                    android:padding="12dp"
+                    android:textColor="@android:color/black"
+                    android:layout_marginBottom="12dp" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:hint="Usia"
+                    android:inputType="number"
+                    android:background="@android:drawable/edit_text"
+                    android:padding="12dp"
+                    android:layout_marginBottom="12dp" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:hint="Tinggi Badan"
+                    android:inputType="numberDecimal"
+                    android:background="@android:drawable/edit_text"
+                    android:padding="12dp"
+                    android:layout_marginBottom="12dp" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:hint="Berat Badan"
+                    android:inputType="numberDecimal"
+                    android:background="@android:drawable/edit_text"
+                    android:padding="12dp"
+                    android:layout_marginBottom="12dp" />
+
+                <EditText
+                    android:id="@+id/passwordField"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:hint="Password"
+                    android:inputType="textPassword"
+                    android:background="@android:drawable/edit_text"
+                    android:padding="12dp"
+                    android:layout_marginBottom="12dp" />
+
+                <!-- Tombol Sign Up -->
+                <Button
+                    android:id="@+id/btnSignUp"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:text="Sign Up"
+                    android:textStyle="bold"
+                    android:background="#6A1B9A"
+                    android:textColor="@android:color/white"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginBottom="32dp" />
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>
