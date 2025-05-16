@@ -131,15 +131,14 @@
 
                 <!-- Tombol Sign Up -->
                 <Button
-                    android:id="@+id/btnSignUp"
-                    android:layout_width="match_parent"
-                    android:layout_height="50dp"
+                    android:id="@+id/btnMulai"
+                    android:layout_width="353dp"
+                    android:layout_height="52dp"
+                    android:layout_marginTop="32dp"
+                    android:backgroundTint="#2E7D32"
                     android:text="Sign Up"
-                    android:textStyle="bold"
-                    android:background="#6A1B9A"
-                    android:textColor="@android:color/white"
-                    android:layout_marginTop="12dp"
-                    android:layout_marginBottom="32dp" />
+                    android:textSize="20sp"
+                    android:textColor="#FFFFFF"/>
             </LinearLayout>
         </RelativeLayout>
     </ScrollView>

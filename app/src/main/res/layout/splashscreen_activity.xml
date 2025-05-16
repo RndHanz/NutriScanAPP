@@ -42,6 +42,7 @@
         android:layout_marginTop="32dp"
         android:backgroundTint="#2E7D32"
         android:text="Mulai"
+        android:textSize="20sp"
         android:textColor="#FFFFFF"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
