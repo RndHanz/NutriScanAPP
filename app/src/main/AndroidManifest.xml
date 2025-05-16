@@ -28,10 +28,10 @@
             android:name=".MainActivity"
             android:exported="false" />
 
-<!--        &lt;!&ndash; Activity login &ndash;&gt;-->
-<!--        <activity-->
-<!--            android:name=".LoginActivity"-->
-<!--            android:exported="false" />-->
+        <!-- Activity login -->
+        <activity
+            android:name=".LoginActivity"
+            android:exported="false" />
 
 <!--        &lt;!&ndash; Activity signup &ndash;&gt;-->
 <!--        <activity-->
