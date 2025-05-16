@@ -14,7 +14,7 @@
         android:layout_width="259dp"
         android:layout_height="385dp"
         android:layout_marginTop="76dp"
-        android:src="@drawable/Logo_Nutriscan"
+        android:src="@drawable/nutriscanlogo"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />

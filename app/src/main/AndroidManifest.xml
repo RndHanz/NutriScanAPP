@@ -12,15 +12,32 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.NutriscanAPP"
         tools:targetApi="31">
+
+        <!-- Splashscreen sebagai activity launcher -->
         <activity
-            android:name=".MainActivity"
+            android:name=".SplashscreenActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <!-- Activity utama -->
+        <activity
+            android:name=".MainActivity"
+            android:exported="false" />
+
+<!--        &lt;!&ndash; Activity login &ndash;&gt;-->
+<!--        <activity-->
+<!--            android:name=".LoginActivity"-->
+<!--            android:exported="false" />-->
+
+<!--        &lt;!&ndash; Activity signup &ndash;&gt;-->
+<!--        <activity-->
+<!--            android:name=".SignUpActivity"-->
+<!--            android:exported="false" />-->
+
     </application>
 
 </manifest>

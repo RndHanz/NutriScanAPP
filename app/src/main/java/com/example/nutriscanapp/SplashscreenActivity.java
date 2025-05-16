@@ -7,14 +7,14 @@ import android.widget.Button;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-public class splashscreen_activity extends AppCompatActivity {
+public class SplashscreenActivity extends AppCompatActivity {
 
     Button btnMulai;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.SplashScreenActivity);
+        setContentView(R.layout.splashscreen_activity);
 
         btnMulai = findViewById(R.id.btnMulai);
 
@@ -22,7 +22,7 @@ public class splashscreen_activity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 // Pindah ke LoginActivity
-                Intent intent = new Intent(splashscreen_activity.this, login_activity.class);
+                Intent intent = new Intent(SplashscreenActivity.this, login_activity.class);
                 startActivity(intent);
                 finish(); // supaya tidak bisa balik ke splash
             }
