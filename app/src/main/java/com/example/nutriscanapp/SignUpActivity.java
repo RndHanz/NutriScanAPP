@@ -13,7 +13,7 @@ public class SignUpActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.login_activity); // GANTI dengan file layout signup kamu
+        setContentView(R.layout.signup_activity); // GANTI dengan file layout signup kamu
 
         // Temukan Spinner di layout
         spinnerAlergi = findViewById(R.id.spinnerAlergi);
