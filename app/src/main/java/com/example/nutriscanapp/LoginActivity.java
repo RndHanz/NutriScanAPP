@@ -13,7 +13,7 @@ public class LoginActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.login_activity); // Ganti dengan nama layout kamu jika bukan login_activity.xml
+        setContentView(R.layout.login_activity);
 
         // Temukan Spinner di layout
         spinnerAlergi = findViewById(R.id.spinnerAlergi);

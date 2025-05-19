@@ -33,10 +33,10 @@
             android:name=".LoginActivity"
             android:exported="false" />
 
-<!--        &lt;!&ndash; Activity signup &ndash;&gt;-->
-<!--        <activity-->
-<!--            android:name=".SignUpActivity"-->
-<!--            android:exported="false" />-->
+        <!-- Activity signup -->
+        <activity
+            android:name=".SignUpActivity"
+            android:exported="false" />
 
     </application>
 
