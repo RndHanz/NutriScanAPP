@@ -3,15 +3,14 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <!-- Fullscreen Background Image -->
+    <!-- Background -->
     <ImageView
-        android:id="@+id/backgroundImage"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:scaleType="centerCrop"
         android:src="@drawable/background" />
 
-    <!-- Semi-transparent overlay -->
+    <!-- Overlay -->
     <View
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -27,7 +26,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
-            <!-- Logo NutriScan -->
+            <!-- Logo -->
             <TextView
                 android:id="@+id/logoNutriscan"
                 android:layout_width="wrap_content"
@@ -41,82 +40,34 @@
 
             <!-- Title -->
             <TextView
-                android:id="@+id/signUpTitle"
+                android:id="@+id/loginTitle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Sign Up"
+                android:text="Login"
                 android:textSize="32sp"
                 android:textColor="@android:color/white"
                 android:textStyle="bold"
                 android:layout_centerHorizontal="true"
                 android:layout_marginTop="80dp" />
 
-            <!-- Form Container -->
+            <!-- Form -->
             <LinearLayout
-                android:id="@+id/formContainer"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
-                android:layout_below="@id/signUpTitle"
+                android:layout_below="@id/loginTitle"
                 android:layout_marginTop="32dp">
 
                 <!-- Nama -->
                 <EditText
+                    android:id="@+id/namaField"
                     android:layout_width="match_parent"
                     android:layout_height="50dp"
                     android:hint="Nama"
                     android:background="@drawable/rounded_edittext"
                     android:padding="12dp"
-                    android:textColor="#000000"
-                    android:layout_marginBottom="12dp" />
-
-                <!-- Usia -->
-                <EditText
-                    android:layout_width="match_parent"
-                    android:layout_height="50dp"
-                    android:hint="Usia"
-                    android:inputType="number"
-                    android:background="@drawable/rounded_edittext"
-                    android:padding="12dp"
-                    android:layout_marginBottom="12dp" />
-
-                <!-- Tinggi Badan -->
-                <EditText
-                    android:layout_width="match_parent"
-                    android:layout_height="50dp"
-                    android:hint="Tinggi Badan"
-                    android:inputType="numberDecimal"
-                    android:background="@drawable/rounded_edittext"
-                    android:padding="12dp"
-                    android:layout_marginBottom="12dp" />
-
-                <!-- Berat Badan -->
-                <EditText
-                    android:layout_width="match_parent"
-                    android:layout_height="50dp"
-                    android:hint="Berat Badan"
-                    android:inputType="numberDecimal"
-                    android:background="@drawable/rounded_edittext"
-                    android:padding="12dp"
-                    android:layout_marginBottom="12dp" />
-
-                <!-- Alergi -->
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Alergi (jika ada):"
-                    android:textColor="@android:color/white"
-                    android:textStyle="bold"
-                    android:layout_marginBottom="8dp" />
-
-                <Spinner
-                    android:id="@+id/spinnerAlergi"
-                    android:layout_width="match_parent"
-                    android:layout_height="50dp"
-                    android:background="@drawable/rounded_edittext"
-                    android:padding="12dp"
                     android:layout_marginBottom="12dp"
-                    android:spinnerMode="dropdown" />
+                    android:textColor="#000000" />
 
                 <!-- Password -->
                 <EditText
@@ -127,18 +78,32 @@
                     android:inputType="textPassword"
                     android:background="@drawable/rounded_edittext"
                     android:padding="12dp"
-                    android:layout_marginBottom="12dp" />
+                    android:layout_marginBottom="12dp"
+                    android:textColor="#000000" />
 
-                <!-- Tombol Sign Up -->
+                <!-- Tombol Login -->
                 <Button
-                    android:id="@+id/btnMulai"
+                    android:id="@+id/btnLogin"
                     android:layout_width="353dp"
                     android:layout_height="52dp"
-                    android:layout_marginTop="32dp"
                     android:backgroundTint="#2E7D32"
-                    android:text="Sign Up"
+                    android:text="Login"
                     android:textSize="20sp"
-                    android:textColor="#FFFFFF"/>
+                    android:textColor="#FFFFFF"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="24dp" />
+
+                <!-- Link ke Sign Up -->
+                <TextView
+                    android:id="@+id/txtToSignUp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Belum punya akun? Sign Up"
+                    android:textColor="#FFFFFF"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="16dp"
+                    android:textStyle="bold"
+                    android:textSize="14sp" />
             </LinearLayout>
         </RelativeLayout>
     </ScrollView>

@@ -1,42 +1,39 @@
 package com.example.nutriscanapp;
 
+import android.content.Intent;
 import android.os.Bundle;
-import android.widget.ArrayAdapter;
-import android.widget.Spinner;
-
+import android.view.View;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.TextView;
 import androidx.appcompat.app.AppCompatActivity;
 
 public class LoginActivity extends AppCompatActivity {
 
-    Spinner spinnerAlergi;
+    EditText namaField, passwordField;
+    Button btnLogin;
+    TextView txtToSignUp;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.login_activity);
 
-        // Temukan Spinner di layout
-        spinnerAlergi = findViewById(R.id.spinnerAlergi);
+        namaField = findViewById(R.id.namaField);
+        passwordField = findViewById(R.id.passwordField);
+        btnLogin = findViewById(R.id.btnLogin);
+        txtToSignUp = findViewById(R.id.txtToSignUp);
 
-        // Buat daftar item untuk dropdown
-        String[] daftarAlergi = {
-                "Pilih Alergi",
-                "Kacang",
-                "Susu",
-                "Telur",
-                "Seafood",
-                "Gandum",
-                "Lainnya"
-        };
+        btnLogin.setOnClickListener(v -> {
+            String nama = namaField.getText().toString();
+            String password = passwordField.getText().toString();
 
-        // Buat adapter untuk menghubungkan array dengan spinner
-        ArrayAdapter<String> adapter = new ArrayAdapter<>(
-                this,
-                android.R.layout.simple_spinner_dropdown_item,
-                daftarAlergi
-        );
+            // TODO: Validasi login
+        });
 
-        // Set adapter-nya ke Spinner
-        spinnerAlergi.setAdapter(adapter);
+        txtToSignUp.setOnClickListener(v -> {
+            Intent intent = new Intent(LoginActivity.this, SignUpActivity.class);
+            startActivity(intent);
+        });
     }
 }
