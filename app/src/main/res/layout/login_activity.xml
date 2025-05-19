@@ -31,42 +31,42 @@
                 android:id="@+id/logoNutriscan"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="16dp"
                 android:text="NutriScan"
                 android:textColor="@android:color/white"
-                android:textStyle="bold"
                 android:textSize="20sp"
-                android:layout_alignParentEnd="true"
-                android:layout_marginTop="16dp" />
+                android:textStyle="bold" />
 
             <!-- Title -->
             <TextView
                 android:id="@+id/loginTitle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Login"
-                android:textSize="32sp"
-                android:textColor="@android:color/white"
-                android:textStyle="bold"
                 android:layout_centerHorizontal="true"
-                android:layout_marginTop="80dp" />
+                android:layout_marginTop="80dp"
+                android:text="Login"
+                android:textColor="@android:color/white"
+                android:textSize="32sp"
+                android:textStyle="bold" />
 
             <!-- Form -->
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
+                android:layout_height="235dp"
                 android:layout_below="@id/loginTitle"
-                android:layout_marginTop="32dp">
+                android:layout_marginTop="32dp"
+                android:orientation="vertical">
 
                 <!-- Nama -->
                 <EditText
                     android:id="@+id/namaField"
                     android:layout_width="match_parent"
                     android:layout_height="50dp"
-                    android:hint="Nama"
-                    android:background="@drawable/rounded_edittext"
-                    android:padding="12dp"
                     android:layout_marginBottom="12dp"
+                    android:background="@drawable/rounded_edittext"
+                    android:hint="Nama"
+                    android:padding="12dp"
                     android:textColor="#000000" />
 
                 <!-- Password -->
@@ -74,11 +74,11 @@
                     android:id="@+id/passwordField"
                     android:layout_width="match_parent"
                     android:layout_height="50dp"
+                    android:layout_marginBottom="12dp"
+                    android:background="@drawable/rounded_edittext"
                     android:hint="Password"
                     android:inputType="textPassword"
-                    android:background="@drawable/rounded_edittext"
                     android:padding="12dp"
-                    android:layout_marginBottom="12dp"
                     android:textColor="#000000" />
 
                 <!-- Tombol Login -->
@@ -86,24 +86,24 @@
                     android:id="@+id/btnLogin"
                     android:layout_width="353dp"
                     android:layout_height="52dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="24dp"
                     android:backgroundTint="#2E7D32"
                     android:text="Login"
-                    android:textSize="20sp"
                     android:textColor="#FFFFFF"
-                    android:layout_gravity="center"
-                    android:layout_marginTop="24dp" />
+                    android:textSize="20sp" />
 
                 <!-- Link ke Sign Up -->
                 <TextView
                     android:id="@+id/txtToSignUp"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Belum punya akun? Sign Up"
-                    android:textColor="#FFFFFF"
                     android:layout_gravity="center"
                     android:layout_marginTop="16dp"
-                    android:textStyle="bold"
-                    android:textSize="14sp" />
+                    android:text="Belum punya akun? Sign Up"
+                    android:textColor="#FFFFFF"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
             </LinearLayout>
         </RelativeLayout>
     </ScrollView>
