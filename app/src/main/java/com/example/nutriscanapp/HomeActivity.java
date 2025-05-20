@@ -24,9 +24,9 @@ public class HomeActivity extends AppCompatActivity {
         btnLogout = findViewById(R.id.btnLogout);
         btnChatAI = findViewById(R.id.btnChatAI);
         btnScan = findViewById(R.id.btnScan);
-        btnProfile = findViewById(R.id.btnProfile);
-        btnBottomScan = findViewById(R.id.btnBottomScan);
-        btnHistory = findViewById(R.id.btnHistory);
+//        btnProfile = findViewById(R.id.btnProfile);
+//        btnBottomScan = findViewById(R.id.btnBottomScan);
+//        btnHistory = findViewById(R.id.btnHistory);
 
         // Ganti nama user sesuai intent atau default
         String username = getIntent().getStringExtra("username");
