@@ -4,7 +4,6 @@
     android:layout_height="match_parent"
     android:background="#C8FAD4">
 
-    <!-- Logo -->
     <ImageView
         android:id="@+id/logoImage"
         android:layout_width="188dp"
@@ -13,7 +12,6 @@
         android:layout_marginTop="40dp"
         android:src="@drawable/nutriscanlogo" />
 
-    <!-- Greeting -->
     <TextView
         android:id="@+id/txtGreeting"
         android:layout_width="wrap_content"
@@ -26,7 +24,6 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="24dp" />
 
-    <!-- CHAT AI Button -->
     <ImageView
         android:id="@+id/btnChatAI"
         android:layout_width="200dp"
@@ -39,7 +36,6 @@
         android:scaleType="fitCenter"
         android:padding="4dp" />
 
-    <!-- Scan Button -->
     <ImageView
         android:id="@+id/btnScan"
         android:layout_width="200dp"
@@ -52,7 +48,6 @@
         android:scaleType="fitCenter"
         android:padding="4dp" />
 
-    <!-- Logout Button -->
     <Button
         android:id="@+id/btnLogout"
         android:layout_width="280dp"
@@ -65,43 +60,84 @@
         android:textStyle="bold"
         android:backgroundTint="#2E7D32" />
 
-    <!-- Bottom Navigation -->
     <RelativeLayout
         android:id="@+id/bottomNav"
         android:layout_width="match_parent"
         android:layout_height="80dp"
         android:layout_alignParentBottom="true"
         android:background="#1B5E20">
+
+        <LinearLayout
+            android:id="@+id/layoutProfile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="40dp"
+            android:gravity="center"
+            android:clickable="true"
+            android:focusable="true">
+            <ImageView
+                android:id="@+id/btnProfile"
+                android:layout_width="60dp"
+                android:layout_height="50dp"
+                android:src="@drawable/profile" /> <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Profile"
+            android:textColor="#FFFFFF"
+            android:textSize="12sp" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/layoutBottomScan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:clickable="true"
+            android:focusable="true">
+
+            <ImageView
+                android:id="@+id/btnBottomScan"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:background="@drawable/center_button_bg"
+                android:padding="10dp"
+                android:src="@drawable/scanmenu" />
+
+            <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Scan"
+            android:textColor="#FFFFFF"
+            android:textSize="12sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layoutHistory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="40dp"
+            android:gravity="center"
+            android:clickable="true"
+            android:focusable="true">
+            <ImageView
+                android:id="@+id/btnHistory"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/history" /> <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="History"
+            android:textColor="#FFFFFF"
+            android:textSize="12sp" />
+        </LinearLayout>
     </RelativeLayout>
 </RelativeLayout>
-
-<!-- Profile Button -->
-    <!--        &lt;!&ndash; Profile Button &ndash;&gt;-->
-<!--        <ImageView-->
-<!--            android:id="@+id/btnProfile"-->
-<!--            android:layout_width="40dp"-->
-<!--            android:layout_height="40dp"-->
-<!--            android:src="@drawable/ic_profile"-->
-<!--            android:layout_alignParentStart="true"-->
-<!--            android:layout_centerVertical="true"-->
-<!--            android:layout_marginStart="40dp" />-->
-
-        <!-- Scan Button (center) -->
-<!--        <ImageView-->
-<!--            android:id="@+id/btnBottomScan"-->
-<!--            android:layout_width="64dp"-->
-<!--            android:layout_height="64dp"-->
-<!--            android:src="@drawable/ic_scan"-->
-<!--            android:layout_centerInParent="true"-->
-<!--            android:background="@drawable/center_button_bg"-->
-<!--            android:padding="10dp" />-->
-
-        <!-- History Button -->
-<!--        <ImageView-->
-<!--            android:id="@+id/btnHistory"-->
-<!--            android:layout_width="40dp"-->
-<!--            android:layout_height="40dp"-->
-<!--            android:src="@drawable/ic_history"-->
-<!--            android:layout_alignParentEnd="true"-->
-<!--            android:layout_centerVertical="true"-->
-<!--            android:layout_marginEnd="40dp" />-->
