@@ -15,7 +15,7 @@
         android:contentDescription="Home"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        android:src="@drawable/ic_home" />
+        android:src="@drawable/home" />
 
     <!-- Logo NutriScan -->
     <ImageView
@@ -29,7 +29,7 @@
         app:layout_constraintStart_toEndOf="@id/homeIcon"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
-        android:src="@drawable/nutriscan_logo" />
+        android:src="@drawable/nutriscanlogo" />
 
     <!-- Chat AI Logo -->
     <ImageView
@@ -41,7 +41,7 @@
         app:layout_constraintTop_toBottomOf="@id/nutriscanLogo"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:src="@drawable/chat_ai_logo" />
+        android:src="@drawable/chatai" />
 
     <!-- Chat AI Text -->
     <TextView
