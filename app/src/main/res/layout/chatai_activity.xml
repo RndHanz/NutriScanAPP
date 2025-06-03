@@ -44,8 +44,8 @@
 
     <ImageView
         android:id="@+id/chatAiLogo"
-        android:layout_width="161dp"
-        android:layout_height="197dp"
+        android:layout_width="166dp"
+        android:layout_height="201dp"
         android:layout_marginTop="4dp"
         android:contentDescription="Chat AI Logo"
         android:src="@drawable/chatai"
