@@ -2,7 +2,6 @@ package com.example.nutriscanapp;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
@@ -25,10 +24,14 @@ public class LoginActivity extends AppCompatActivity {
         txtToSignUp = findViewById(R.id.txtToSignUp);
 
         btnLogin.setOnClickListener(v -> {
+            // Ambil nama, walaupun kosong tidak masalah
             String nama = namaField.getText().toString();
-            String password = passwordField.getText().toString();
 
-            // TODO: Validasi login
+            // Pindah ke HomeActivity
+            Intent intent = new Intent(LoginActivity.this, HomeActivity.class);
+            intent.putExtra("username", nama); // Opsional
+            startActivity(intent);
+            finish(); // Supaya tidak bisa kembali ke login dengan tombol back
         });
 
         txtToSignUp.setOnClickListener(v -> {

@@ -42,6 +42,7 @@ public class HomeActivity extends AppCompatActivity {
             txtGreeting.setText("Halo, " + username + " Selamat Datang");
         }
 
+
         // Menambahkan OnClickListener untuk tombol utama di bagian tengah layout
         btnChatAI.setOnClickListener(v -> {
             // TODO: Tambahkan logika untuk membuka activity Chat AI di sini
