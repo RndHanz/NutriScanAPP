@@ -43,6 +43,10 @@
             android:name=".HomeActivity"
             android:exported="false" />
 
+        <activity
+            android:name=".ChatAiActivity"
+            android:exported="false" />
+
     </application>
 
 </manifest>
