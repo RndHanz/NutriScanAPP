@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
 
 public class LoginActivity extends AppCompatActivity {
@@ -24,14 +25,24 @@ public class LoginActivity extends AppCompatActivity {
         txtToSignUp = findViewById(R.id.txtToSignUp);
 
         btnLogin.setOnClickListener(v -> {
-            // Ambil nama, walaupun kosong tidak masalah
-            String nama = namaField.getText().toString();
+            String nama = namaField.getText().toString().trim();
+            String password = passwordField.getText().toString().trim();
 
-            // Pindah ke HomeActivity
+            if (nama.isEmpty()) {
+                Toast.makeText(LoginActivity.this, "Username wajib diisi", Toast.LENGTH_SHORT).show();
+                return;
+            }
+
+            if (password.isEmpty()) {
+                Toast.makeText(LoginActivity.this, "Password wajib diisi", Toast.LENGTH_SHORT).show();
+                return;
+            }
+
+            // Jika lolos validasi, lanjut ke HomeActivity
             Intent intent = new Intent(LoginActivity.this, HomeActivity.class);
-            intent.putExtra("username", nama); // Opsional
+            intent.putExtra("username", nama);
             startActivity(intent);
-            finish(); // Supaya tidak bisa kembali ke login dengan tombol back
+            finish(); // Supaya tidak bisa kembali ke login
         });
 
         txtToSignUp.setOnClickListener(v -> {
