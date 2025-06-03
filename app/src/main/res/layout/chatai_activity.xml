@@ -1,77 +1,71 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@android:color/white">
 
     <!-- Home Icon -->
-    <ImageView
-        android:id="@+id/homeIcon"
-        android:layout_width="24dp"
-        android:layout_height="24dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
-        android:contentDescription="Home"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        android:src="@drawable/home" />
 
     <!-- Logo NutriScan -->
-    <ImageView
-        android:id="@+id/nutriscanLogo"
-        android:layout_width="wrap_content"
-        android:layout_height="32dp"
-        android:layout_marginTop="12dp"
-        android:contentDescription="NutriScan Logo"
-        android:scaleType="fitCenter"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintStart_toEndOf="@id/homeIcon"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        android:src="@drawable/nutriscanlogo" />
 
     <!-- Chat AI Logo -->
+
     <ImageView
-        android:id="@+id/chatAiLogo"
-        android:layout_width="48dp"
-        android:layout_height="48dp"
+        android:id="@+id/homeIcon"
+        android:layout_width="41dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="24dp"
         android:layout_marginTop="32dp"
-        android:contentDescription="Chat AI Logo"
-        app:layout_constraintTop_toBottomOf="@id/nutriscanLogo"
+        android:contentDescription="Home"
+        android:src="@drawable/home"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/nutriscanLogo"
+        android:layout_width="436dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="24dp"
+        android:contentDescription="NutriScan Logo"
+        android:scaleType="fitCenter"
+        android:src="@drawable/nutriscanlogo"
         app:layout_constraintEnd_toEndOf="parent"
-        android:src="@drawable/chatai" />
+        app:layout_constraintHorizontal_bias="0.866"
+        app:layout_constraintStart_toEndOf="@id/homeIcon"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <!-- Chat AI Text -->
-    <TextView
-        android:id="@+id/chatAiText"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="CHAT AI"
-        android:textStyle="bold"
-        android:textSize="16sp"
-        android:layout_marginTop="8dp"
-        app:layout_constraintTop_toBottomOf="@id/chatAiLogo"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
 
     <!-- Bubble text dari AI -->
+
+    <!-- Chat form -->
+
+    <ImageView
+        android:id="@+id/chatAiLogo"
+        android:layout_width="161dp"
+        android:layout_height="197dp"
+        android:layout_marginTop="4dp"
+        android:contentDescription="Chat AI Logo"
+        android:src="@drawable/chatai"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/nutriscanLogo" />
+
     <TextView
         android:id="@+id/aiGreeting"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
         android:background="@drawable/bubble_ai"
         android:padding="12dp"
         android:text="Hi, Tyo ada yang ingin di tanyakan mengenai kesehatan?"
         android:textColor="@android:color/black"
         android:textSize="14sp"
-        app:layout_constraintTop_toBottomOf="@id/chatAiText"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+        tools:layout_editor_absoluteY="252dp" />
 
-    <!-- Chat form -->
     <EditText
         android:id="@+id/messageInput"
         android:layout_width="0dp"
@@ -91,11 +85,13 @@
         android:layout_width="48dp"
         android:layout_height="48dp"
         android:layout_marginEnd="16dp"
-        android:background="@drawable/green_circle"
+        android:layout_marginBottom="16dp"
+        android:background="@android:color/transparent"
         android:contentDescription="Kirim"
-        android:src="@drawable/kirim"
-        android:tint="@android:color/white"
+        android:src="@drawable/kirimai"
+        android:scaleType="fitCenter"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
