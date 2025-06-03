@@ -93,7 +93,7 @@
         android:layout_marginEnd="16dp"
         android:background="@drawable/green_circle"
         android:contentDescription="Kirim"
-        android:src="@drawable/ic_send"
+        android:src="@drawable/kirim"
         android:tint="@android:color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
