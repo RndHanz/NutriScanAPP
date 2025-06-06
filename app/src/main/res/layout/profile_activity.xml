@@ -6,6 +6,7 @@
     android:background="#C2FDCD"
     tools:context=".ProfileActivity">
 
+
     <!-- Logo NutriScan -->
     <ImageView
         android:id="@+id/imgLogo"
