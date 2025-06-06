@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#C8FAD0"
+    android:background="#C2FDCD"
     tools:context=".ProfileActivity">
 
     <!-- Logo NutriScan -->
@@ -44,47 +44,55 @@
     <!-- Form Profil -->
     <LinearLayout
         android:id="@+id/formLayout"
-        android:orientation="vertical"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_width="349dp"
+        android:layout_height="239dp"
         android:layout_below="@id/tvNamaUser"
+        android:layout_marginHorizontal="32dp"
         android:layout_marginTop="24dp"
-        android:layout_marginHorizontal="32dp">
+        android:orientation="vertical">
 
         <EditText
             android:id="@+id/etUsia"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:background="@drawable/rounded_edittext"
             android:hint="Usia"
             android:padding="12dp"
-            android:background="@color/cardview_light_background" />
+            android:textColor="@android:color/black"
+            android:textColorHint="@android:color/black" />
 
         <EditText
             android:id="@+id/etAlergi"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/rounded_edittext"
             android:hint="Alergi"
             android:padding="12dp"
-            android:background="@color/cardview_light_background"
-            android:layout_marginTop="12dp" />
+            android:textColor="@android:color/black"
+            android:textColorHint="@android:color/black" />
 
         <EditText
             android:id="@+id/etTinggi"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/rounded_edittext"
             android:hint="Tinggi Badan"
             android:padding="12dp"
-            android:background="@color/cardview_light_background"
-            android:layout_marginTop="12dp" />
+            android:textColor="@android:color/black"
+            android:textColorHint="@android:color/black" />
 
         <EditText
             android:id="@+id/etBerat"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Berat badan"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/rounded_edittext"
+            android:hint="Berat Badan"
             android:padding="12dp"
-            android:background="@color/cardview_light_background"
-            android:layout_marginTop="12dp" />
+            android:textColor="@android:color/black"
+            android:textColorHint="@android:color/black" />
     </LinearLayout>
 
     <!-- Logout -->
@@ -99,21 +107,5 @@
 
     </LinearLayout>
 
-    <ImageView
-        android:id="@+id/imgLogout"
-        android:layout_width="135dp"
-        android:layout_height="83dp"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginEnd="33dp"
-        android:layout_marginBottom="150dp"
-        android:clickable="true"
-        android:contentDescription="Logout"
-        android:focusable="true"
-        android:src="@drawable/iconlogout" />
-
-    <!-- MENU BAWAH + SCAN -->
-    <!-- Tempelkan kode navigasi bawah yang kamu berikan di sini -->
-    <!-- ... (copy paste bagian Navigasi yang sudah kamu punya) -->
 
 </RelativeLayout>
