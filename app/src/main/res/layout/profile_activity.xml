@@ -96,16 +96,17 @@
     </LinearLayout>
 
     <!-- Logout -->
-    <LinearLayout
+    <Button
         android:id="@+id/btnLogout"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="280dp"
+        android:layout_height="52dp"
         android:layout_below="@id/formLayout"
-        android:layout_marginTop="18dp"
-        android:gravity="center"
-        android:orientation="horizontal">
-
-    </LinearLayout>
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"
+        android:text="Logout"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:backgroundTint="#2E7D32" />
 
 
 </RelativeLayout>
