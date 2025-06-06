@@ -7,16 +7,14 @@
     tools:context=".ProfileActivity">
 
     <!-- Logo NutriScan -->
-    <TextView
-        android:id="@+id/tvLogo"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="NutriScan"
-        android:textSize="28sp"
-        android:textColor="#004D25"
-        android:textStyle="bold"
+    <ImageView
+        android:id="@+id/imgLogo"
+        android:layout_width="175dp"
+        android:layout_height="64dp"
+        android:layout_centerHorizontal="true"
         android:layout_marginTop="32dp"
-        android:layout_centerHorizontal="true" />
+        android:contentDescription="Logo NutriScan"
+        android:src="@drawable/nutriscanlogo" />
 
     <!-- Icon User -->
     <ImageView
@@ -24,9 +22,11 @@
         android:layout_width="80dp"
         android:layout_height="80dp"
         android:src="@drawable/profile"
-        android:layout_below="@id/tvLogo"
+        android:layout_below="@id/imgLogo"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="24dp" />
+        android:layout_marginTop="24dp"
+        android:contentDescription="Icon User" />
+
 
     <!-- Nama User -->
     <TextView
@@ -93,24 +93,24 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/formLayout"
-        android:layout_marginTop="16dp"
-        android:layout_centerHorizontal="true"
-        android:orientation="horizontal"
-        android:gravity="center">
+        android:layout_marginTop="18dp"
+        android:gravity="center"
+        android:orientation="horizontal">
 
-        <ImageView
-            android:layout_width="20dp"
-            android:layout_height="20dp"
-            android:src="@drawable/iconlogout"
-            android:tint="#004D25" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text=" Logout"
-            android:textColor="#004D25"
-            android:textSize="16sp" />
     </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imgLogout"
+        android:layout_width="135dp"
+        android:layout_height="83dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="33dp"
+        android:layout_marginBottom="150dp"
+        android:clickable="true"
+        android:contentDescription="Logout"
+        android:focusable="true"
+        android:src="@drawable/iconlogout" />
 
     <!-- MENU BAWAH + SCAN -->
     <!-- Tempelkan kode navigasi bawah yang kamu berikan di sini -->
