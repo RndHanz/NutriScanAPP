@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#C8FAD0"
+    tools:context=".ProfileActivity">
+
+    <!-- Logo NutriScan -->
+    <TextView
+        android:id="@+id/tvLogo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="NutriScan"
+        android:textSize="28sp"
+        android:textColor="#004D25"
+        android:textStyle="bold"
+        android:layout_marginTop="32dp"
+        android:layout_centerHorizontal="true" />
+
+    <!-- Icon User -->
+    <ImageView
+        android:id="@+id/imgUser"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:src="@drawable/profile"
+        android:layout_below="@id/tvLogo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp" />
+
+    <!-- Nama User -->
+    <TextView
+        android:id="@+id/tvNamaUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nama User"
+        android:textSize="22sp"
+        android:textColor="#004D25"
+        android:textStyle="bold"
+        android:layout_below="@id/imgUser"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp" />
+
+    <!-- Form Profil -->
+    <LinearLayout
+        android:id="@+id/formLayout"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvNamaUser"
+        android:layout_marginTop="24dp"
+        android:layout_marginHorizontal="32dp">
+
+        <EditText
+            android:id="@+id/etUsia"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Usia"
+            android:padding="12dp"
+            android:background="@color/cardview_light_background" />
+
+        <EditText
+            android:id="@+id/etAlergi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Alergi"
+            android:padding="12dp"
+            android:background="@color/cardview_light_background"
+            android:layout_marginTop="12dp" />
+
+        <EditText
+            android:id="@+id/etTinggi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Tinggi Badan"
+            android:padding="12dp"
+            android:background="@color/cardview_light_background"
+            android:layout_marginTop="12dp" />
+
+        <EditText
+            android:id="@+id/etBerat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Berat badan"
+            android:padding="12dp"
+            android:background="@color/cardview_light_background"
+            android:layout_marginTop="12dp" />
+    </LinearLayout>
+
+    <!-- Logout -->
+    <LinearLayout
+        android:id="@+id/btnLogout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/formLayout"
+        android:layout_marginTop="16dp"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/iconlogout"
+            android:tint="#004D25" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" Logout"
+            android:textColor="#004D25"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <!-- MENU BAWAH + SCAN -->
+    <!-- Tempelkan kode navigasi bawah yang kamu berikan di sini -->
+    <!-- ... (copy paste bagian Navigasi yang sudah kamu punya) -->
+
+</RelativeLayout>
