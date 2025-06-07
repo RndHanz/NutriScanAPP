@@ -9,3 +9,4 @@ public interface OpenFoodFactsApi {
     @GET("api/v0/product/{barcode}.json")
     Call<ProductResponse> getProduct(@Path("barcode") String barcode);
 }
+
