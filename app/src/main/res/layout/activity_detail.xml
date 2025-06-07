@@ -66,6 +66,19 @@
             android:textSize="15sp" />
 
         <TextView
+            android:id="@+id/tvKalori"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Kalori: -" />
+
+        <TextView
+            android:id="@+id/tvEnergi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Energi: -" />
+
+
+        <TextView
             android:id="@+id/tvAlergi"
             android:text="Catatan Alergi : Tidak cocok untuk alergi bawang."
             android:textStyle="bold"

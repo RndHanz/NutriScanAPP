@@ -76,3 +76,4 @@ public class ScanActivity extends AppCompatActivity {
         barcodeScannerView.pause();
     }
 }
+

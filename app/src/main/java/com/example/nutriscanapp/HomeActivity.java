@@ -45,41 +45,32 @@ public class HomeActivity extends AppCompatActivity {
 
         // Menambahkan OnClickListener untuk tombol utama di bagian tengah layout
         btnChatAI.setOnClickListener(v -> {
-            // TODO: Tambahkan logika untuk membuka activity Chat AI di sini
-            // Contoh: startActivity(new Intent(HomeActivity.this, ChatAIActivity.class));
-            // Toast.makeText(HomeActivity.this, "Membuka Chat AI", Toast.LENGTH_SHORT).show();
+
         });
 
         btnScan.setOnClickListener(v -> {
-            // TODO: Tambahkan logika untuk membuka activity Scanner di sini
-            // Contoh: startActivity(new Intent(HomeActivity.this, ScannerActivity.class));
-            // Toast.makeText(HomeActivity.this, "Membuka Scanner", Toast.LENGTH_SHORT).show();
+            Intent intent = new Intent(HomeActivity.this, ScanActivity.class);
+            startActivity(intent);
         });
 
+
         btnLogout.setOnClickListener(v -> {
-            // TODO: Tambahkan logika untuk proses logout di sini
-            // Misalnya, menghapus sesi pengguna, mengarahkan kembali ke halaman login
-            // Contoh: FirebaseAuth.getInstance().signOut(); // Jika menggunakan Firebase Auth
-            // Contoh: Intent intent = new Intent(HomeActivity.this, LoginActivity.class);
-            // Contoh: intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_NEW_TASK);
-            // Contoh: startActivity(intent);
-            // Contoh: finish(); // Menutup HomeActivity agar tidak bisa kembali dengan tombol back
-            // Toast.makeText(HomeActivity.this, "Anda Telah Logout", Toast.LENGTH_SHORT).show();
+            Intent intent = new Intent(HomeActivity.this, LoginActivity.class);
+            startActivity(intent);
         });
 
         // Menambahkan OnClickListener untuk tombol navigasi bawah
         layoutProfile.setOnClickListener(v -> {
-            // TODO: Tambahkan logika untuk membuka halaman Profile di sini
-            // Contoh: startActivity(new Intent(HomeActivity.this, ProfileActivity.class));
-            // Toast.makeText(HomeActivity.this, "Membuka Profil", Toast.LENGTH_SHORT).show();
+            Intent intent = new Intent(HomeActivity.this, ProfileActivity.class);
+            startActivity(intent);
+
         });
 
         layoutBottomScan.setOnClickListener(v -> {
-            // TODO: Tambahkan logika untuk membuka Scanner dari navigasi bawah di sini
-            // Ini bisa diarahkan ke Activity Scanner yang sama dengan tombol scan di atas, atau yang berbeda
-            // Contoh: startActivity(new Intent(HomeActivity.this, ScannerActivity.class));
-            // Toast.makeText(HomeActivity.this, "Membuka Scanner (Navigasi Bawah)", Toast.LENGTH_SHORT).show();
+            Intent intent = new Intent(HomeActivity.this, ScanActivity.class);
+            startActivity(intent);
         });
+
 
         layoutHistory.setOnClickListener(v -> {
             // TODO: Tambahkan logika untuk membuka halaman Riwayat di sini

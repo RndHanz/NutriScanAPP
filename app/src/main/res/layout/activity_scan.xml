@@ -33,16 +33,6 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <!-- Frame Scanner -->
-    <ImageView
-        android:id="@+id/imgScannerFrame"
-        android:layout_width="220dp"
-        android:layout_height="220dp"
-        android:src="@drawable/scannerframe"
-        app:layout_constraintTop_toBottomOf="@id/imgLogoScan"
-        app:layout_constraintBottom_toTopOf="@id/bottomNav"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintVertical_bias="0.5" />
 
 
     <!-- Bottom Navigation -->
