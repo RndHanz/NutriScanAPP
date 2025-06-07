@@ -40,4 +40,12 @@ dependencies {
     testImplementation(libs.junit)
     androidTestImplementation(libs.ext.junit)
     androidTestImplementation(libs.espresso.core)
+
+
+}
+
+dependencies {
+    implementation("com.journeyapps:zxing-android-embedded:4.3.0")
+    implementation("androidx.appcompat:appcompat:1.6.1")
+    implementation("androidx.constraintlayout:constraintlayout:2.1.4")
 }
