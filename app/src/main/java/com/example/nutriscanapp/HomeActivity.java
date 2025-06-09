@@ -45,7 +45,8 @@ public class HomeActivity extends AppCompatActivity {
 
         // Menambahkan OnClickListener untuk tombol utama di bagian tengah layout
         btnChatAI.setOnClickListener(v -> {
-
+            Intent intent = new Intent(HomeActivity.this, ChatAiActivity.class);
+            startActivity(intent);
         });
 
         btnScan.setOnClickListener(v -> {
